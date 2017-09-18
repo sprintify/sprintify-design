@@ -1,0 +1,84 @@
+
+//.productivity
+    margin-top: 0
+    padding-top: 100px
+    padding-bottom: 100px
+
+.container
+    padding: 0 20px 90px 20px
+    position: relative
+    top: 0
+    left: 0
+    z-index: 2
+    background-color: $white
+
+
+
+//.content
+  margin: 5% 0 0 0%
+
+.shake
+  //display: block
+  position: relative
+  margin: 0 auto
+  z-index: 2
+  display: block
+  height: auto
+  width: 15%
+
+@-webkit-keyframes watch
+  0%
+    -webkit-transform: translate(3px, 1px) rotate(0deg)
+
+  10%
+    -webkit-transform: translate(-1px, -30px) rotate(-16deg)
+
+  20%
+    -webkit-transform: translate(-30px, 0) rotate(16deg)
+
+  30%
+    -webkit-transform: translate(0, 2px) rotate(0deg)
+
+  40%
+    -webkit-transform: translate(30px, -1px) rotate(16deg)
+
+  50%
+    -webkit-transform: translate(-1px, 30px) rotate(-16deg)
+
+  60%
+    -webkit-transform: translate(-20px, 1px) rotate(0deg)
+
+  70%
+    -webkit-transform: translate(3px, 1px) rotate(-16eg)
+
+  80%
+    -webkit-transform: translate(-1px, -1px) rotate(16deg)
+
+  90%
+    -webkit-transform: translate(2px, 2px) rotate(0deg)
+
+  100%
+    -webkit-transform: translate(3px, 1px) rotate(0deg)
+
+
+.shake
+  -webkit-animation-name: watch
+  -webkit-animation-duration: 80s
+  -webkit-transform-origin: 50% 50%
+  -webkit-animation-iteration-count: infinite
+  -webkit-animation-timing-function: ease-in-out
+
+.title-medium
+        padding-top: 40px
+        text-align: center
+
+@media screen and (max-width: 600px)
+    .shake
+        width: 38%
+
+    .title-medium
+        font-size: 36px
+
+    .productivity
+        padding-top: 450px
+        padding-bottom: 400px

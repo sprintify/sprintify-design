@@ -28,14 +28,25 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
   letter-spacing: -1.5px;
   margin-bottom: 30px;
   color: #b3b9ab;
+  text-align: center;
+}
+
+.title-medium {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  color: #b3b9ab;
 }
 
 .container {
-  padding: 90px 20px 90px 20px;
+  padding: 190px 20px 70px 20px;
   position: relative;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 2;
   background-color: white;
 }
 
@@ -43,6 +54,10 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
+}
+
+.title-large {
+  padding-top: 60px;
 }
 
 .container-staff {
@@ -72,7 +87,7 @@ img.staffimg {
 .headstaff {
   font-family: "Oswald", sans-serif;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 32px;
   text-transform: uppercase;
   margin-top: 10px;
   line-height: 1.2;
@@ -100,11 +115,12 @@ img.staffimg {
 
 @media screen and (max-width: 600px) {
   .container {
-    padding: 50px 20px 50px 20px;
+    padding: 50px 20px 0px 20px;
   }
   .title-large {
     font-size: 50px;
     margin-bottom: 10px;
+    padding-top: 40px;
     letter-spacing: 0;
   }
   .container-staff {
@@ -360,13 +376,10 @@ img.staffimg {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .cb-slideshow li div h3 {
     font-size: 50px;
   }
-}
-
-@media only screen and (max-width: 600px) {
   nav li {
     padding: 24px 4px;
   }
@@ -380,17 +393,16 @@ img.staffimg {
   position: fixed;
   top: 0;
   height: 54px;
-  z-index: 2;
-}
-
-section h2 {
-  font-size: 3em;
-  font-weight: 300;
-  text-transform: uppercase;
-  color: white;
+  z-index: 3;
 }
 
 /* Navigation Settings */
+.wrapper-nav {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: left;
+}
+
 nav {
   position: absolute;
   bottom: 0;
@@ -398,6 +410,7 @@ nav {
   height: 54px;
   background: #0E111B;
   opacity: .9;
+  padding: 0 20px 0 20px;
 }
 
 nav li {
@@ -415,6 +428,10 @@ nav li a {
   text-decoration: none;
 }
 
+nav li:first-child {
+  padding-left: 0;
+}
+
 section {
   height: 100vh;
 }
@@ -427,11 +444,101 @@ section {
     height: 275px;
     top: 0;
     left: 0;
+    padding: 0;
   }
   nav li {
     display: block;
     width: 100%;
     border-bottom: 1px solid #b3b9ab;
+  }
+  nav li:last-child {
+    border-bottom: none;
+  }
+  nav li:first-child {
+    padding-left: 10px;
+  }
+  .wrapper-nav {
+    text-align: center;
+  }
+}
+
+.container {
+  padding: 0 20px 90px 20px;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: white;
+}
+
+.shake {
+  position: relative;
+  margin: 0 auto;
+  z-index: 2;
+  display: block;
+  height: auto;
+  width: 15%;
+}
+
+@-webkit-keyframes watch {
+  0% {
+    -webkit-transform: translate(3px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -30px) rotate(-16deg);
+  }
+  20% {
+    -webkit-transform: translate(-30px, 0) rotate(16deg);
+  }
+  30% {
+    -webkit-transform: translate(0, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(30px, -1px) rotate(16deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 30px) rotate(-16deg);
+  }
+  60% {
+    -webkit-transform: translate(-20px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-16eg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(16deg);
+  }
+  90% {
+    -webkit-transform: translate(2px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(3px, 1px) rotate(0deg);
+  }
+}
+
+.shake {
+  -webkit-animation-name: watch;
+  -webkit-animation-duration: 80s;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+.title-medium {
+  padding-top: 40px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .shake {
+    width: 38%;
+  }
+  .title-medium {
+    font-size: 36px;
+  }
+  .productivity {
+    padding-top: 450px;
+    padding-bottom: 400px;
   }
 }
 

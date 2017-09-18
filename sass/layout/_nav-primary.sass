@@ -4,15 +4,20 @@
   position: fixed
   top: 0
   height: 54px
-  z-index: 2
+  z-index: 3
 
-section h2
+//section h2
   font-size: 3em
   font-weight: 300
   text-transform: uppercase
   color: $white
 
 /* Navigation Settings
+.wrapper-nav
+    max-width: 960px
+    margin: 0 auto
+    text-align: left
+
 
 nav
   position: absolute
@@ -21,9 +26,12 @@ nav
   height: 54px
   background: $dark
   opacity: .9
+  padding: 0 20px 0 20px
+
   li
     display: inline-block
     padding: 12px 10px
+
     a
       color: #757575
       text-transform: uppercase
@@ -32,6 +40,10 @@ nav
       color: $white
       font-size: 20px
       text-decoration: none
+
+nav
+    li:first-child
+        padding-left: 0
 
 section
   height: 100vh
@@ -44,8 +56,17 @@ section
         height: 275px
         top: 0
         left: 0
+        padding: 0;
 
         li
             display: block
             width: 100%
             border-bottom: 1px solid $primary
+    nav
+        li:last-child
+            border-bottom: none
+        li:first-child
+            padding-left: 10px
+
+    .wrapper-nav
+        text-align: center

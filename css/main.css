@@ -189,7 +189,7 @@ img.staffimg {
   opacity: .7;
   padding: 0;
   line-height: 200px;
-  color: #d31869;
+  color: #69d318;
 }
 
 .cb-slideshow li:nth-child(1) span {
@@ -370,6 +370,18 @@ img.staffimg {
   opacity: 1;
 }
 
+.logo {
+  position: absolute;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  top: 40px;
+  left: 40px;
+  width: 160px;
+  height: 50px;
+  border: 2px solid #69d318;
+}
+
 @media screen and (max-width: 1140px) {
   .cb-slideshow li div h3 {
     font-size: 100px;
@@ -527,6 +539,13 @@ section {
 .title-medium {
   padding-top: 40px;
   text-align: center;
+}
+
+/*  Box productivity  */
+.boxproductivity {
+  width: 100%;
+  height: 200px;
+  background-color: #69d318;
 }
 
 @media screen and (max-width: 600px) {

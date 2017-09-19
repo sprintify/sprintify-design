@@ -475,8 +475,18 @@ img.staffimg {
   }
 }
 
+.container-box {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  padding-bottom: 250px;
+  background-color: white;
+}
+
 .title-large.video {
   line-height: 80px;
+  padding-bottom: 20px;
 }
 
 .video-container {

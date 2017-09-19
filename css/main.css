@@ -43,7 +43,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
 
 .accordion {
   max-width: 560px;
-  margin: 0 auto 100px;
+  margin: 0 auto 0;
   border-top: 1px solid #b3b9ab;
   list-style-type: none;
 }
@@ -115,7 +115,7 @@ a.active:after {
 }
 
 .container {
-  padding: 190px 20px 70px 20px;
+  padding: 190px 20px 90px 20px;
   position: relative;
   top: 0;
   left: 0;
@@ -144,6 +144,7 @@ a.active:after {
   -ms-flex-direction: row;
   flex-direction: row;
   padding: 0;
+  padding-bottom: 110px;
 }
 
 img.staffimg {
@@ -199,6 +200,7 @@ img.staffimg {
   .container-staff {
     display: block;
     width: 100%;
+    padding: 20px;
   }
   .box {
     padding-bottom: 20px;
@@ -473,6 +475,36 @@ img.staffimg {
   }
 }
 
+.title-large.video {
+  line-height: 80px;
+}
+
+.video-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #e9ebe7;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+img.imagetest {
+  width: 100%;
+  height: auto;
+}
+
 /* This class is added on scroll */
 .fixed {
   position: fixed;
@@ -614,7 +646,6 @@ section {
   text-align: center;
 }
 
-/*  Box productivity  */
 @media screen and (max-width: 600px) {
   .shake {
     width: 38%;

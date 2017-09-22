@@ -1,72 +1,137 @@
 /* This class is added on scroll
 
 .fixed
-  position: fixed
-  top: 0
-  height: 54px
-  z-index: 3
+   position: fixed
+   top: 0
+   height: 54px
+   z-index: 3
 
-//section h2
-  font-size: 3em
-  font-weight: 300
-  text-transform: uppercase
-  color: $white
-
-/* Navigation Settings
 .wrapper-nav
-    max-width: 960px
-    margin: 0 auto
-    text-align: left
-
-
-nav
-  position: absolute
-  bottom: 0
-  width: 100%
-  height: 54px
-  background: $dark
-  opacity: .9
-  padding: 0 20px 0 20px
-
-  li
-    display: inline-block
-    padding: 12px 10px
-
-    a
-      color: #757575
-      text-transform: uppercase
-      letter-spacing: .5px
-      font-weight: 300
-      color: $white
-      font-size: 20px
-      text-decoration: none
+   width: 100%
+   max-width: 960px
+   margin: 0 auto
 
 nav
-    li:first-child
-        padding-left: 0
+   position: absolute
+   bottom: 0
+   z-index: 3
+   width: 100%
+   background: $dark
+   opacity: .9
+   padding: 0 10px 0 10px
+
+.wrapper-nav
+   display: flex
+   flex-direction: row
+   justify-content: space-between
+
+ul.nav-ulinks
+   flex: 1 1 0
+   display: flex
+   justify-content: flex-start
+   flex-direction: row
+   list-style: none
+   li
+      padding: 12px 20px 12px 0
+      a
+         text-transform: uppercase
+         letter-spacing: .5px
+         font-weight: $font-light
+         color: $white
+         font-size: 20px
+         text-decoration: none
+
+
+//Social links
+ul.sosial-ulinks
+   flex: 1 1 0
+   display: flex
+   justify-content: flex-end
+   flex-direction: row
+   //position: absolute
+   //bottom: 8px
+   opacity: .9
+   margin-top: 10px;
+   //padding-right: 40px;
+   line-height: 0;
+   //padding: 0 20px 0 20px
+   list-style: none
+   li
+      flex: 0 0 auto
+      padding: 2px 0 12px 10px
+      a
+         width: 32px
+         height: 32px
+         background-color: $white
+         color: $dark
+         border-radius: 50%
+         margin-right: 3px
+         display: flex
+         justify-content: center
+         align-items: center
+         text-decoration: none
+         font-size: 13px
+         transition: all 250ms ease-in-out
+         &:hover
+            background-color: $secondary
 
 section
   height: 100vh
 
 @media screen and (max-width: 600px)
-    .fixed
-        display: none
 
-    nav
-        height: 275px
-        top: 0
-        left: 0
-        padding: 0;
+   .fixed
+      display: none
 
-        li
+   nav
+      top: -2px
+      left: 0
+      padding: 0
+      background: none
+      opacity: 1
+
+
+
+
+   .nav-ulinks
+      position: absolute
+      top: 66px
+      left: 0
+      flex-flow: column wrap;
+      width: 100%
+      background: $dark
+      opacity: .9
+      li
+         flex: 0 0 100%
+         border-bottom: 1px solid $primary
+         a
             display: block
-            width: 100%
-            border-bottom: 1px solid $primary
-    nav
-        li:last-child
-            border-bottom: none
-        li:first-child
-            padding-left: 10px
+            padding: 0
 
-    .wrapper-nav
-        text-align: center
+   .sosial-ulinks
+      position: relative
+      top: -9px
+      left: 0px
+      text-align: left
+      //justify-content: flex-start
+      width: 100%
+      background: $dark
+      opacity: 1
+      padding: 13px 10px 6px 0
+      margin-top: 150px
+
+      li
+         flex: 1 1 auto
+         a
+            display: block
+
+   nav
+      li:last-child
+         border-bottom: none
+
+   .nav-ulinks
+      li:first-child
+         border-top: 1px solid $primary
+
+      li:first-child
+         padding-left: 0

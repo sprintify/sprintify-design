@@ -1,0 +1,73 @@
+@media screen and (max-width: 600px)
+   .clearfix:after
+     content: ''
+     clear: both
+     display: block
+
+   .content
+     padding: 0% 5%
+
+   header
+     height: 76px
+     background-color: #333
+     width: 100%
+
+   .logo
+     font-size: 26px
+     margin-left: 14px
+     float: left
+     line-height: 76px
+     color: #fff
+
+   /* Hamburger CSS and active animation */
+
+   #hamburger
+     display: block
+     float: left
+     margin-top: 18px
+     margin-left: 20px
+     text-align: right
+     margin-right: 5%
+     cursor: pointer
+     position: absolute
+     z-index: 50
+
+   .line-1, .line-2, .line-3
+     margin-top: 5px
+     background-color: #fff
+     width: 30px
+     height: 3px
+     display: block
+     position: relative
+     z-index: 50
+     opacity: 1
+
+
+   .line-1.active
+     transform: rotate(45deg)
+     top: 7.5px
+
+   .line-3.active
+     transform: rotate(-45deg)
+
+   .line-2.active
+     display: none
+
+   #dropdown
+     display: none
+     background-color: hotpink
+     position: absolute
+     width: 100%
+     ul #smallscreen
+       list-style: none
+       text-align: center
+       padding: 0
+       margin: 0
+
+       li
+         border-bottom: 1px solid #fff
+         padding: 10px 0
+         a
+           text-decoration: none
+           color: $white
+           font-size: 18px

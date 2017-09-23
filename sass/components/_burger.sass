@@ -1,4 +1,54 @@
-@media screen and (max-width: 600px)
+nav
+  .menu
+    clear: both
+    max-height: 0
+    transition: max-height .5s ease-out
+    letter-spacing: 2px
+  .menu-icon
+    cursor: pointer
+    float: right
+    padding: 25.5px 20px
+    position: relative
+    user-select: none
+    .navicon
+      background: $white
+      display: block
+      height: 3px
+      position: relative
+      transition: background .2s ease-out
+      width: 30px
+      &:before, &:after
+        background: $white
+        content: ''
+        display: block
+        height: 100%
+        position: absolute
+        transition: all .25s ease-out
+        width: 100%
+      &:before
+        top: 8px
+      &:after
+        top: -8px
+  .menu-btn
+    display: none
+    &:checked ~
+      .menu
+        max-height: 300px
+      .menu-icon
+        .navicon
+          background: transparent
+          &:before
+            transform: rotate(-45deg)
+          &:after
+            transform: rotate(45deg)
+        &:not(.steps) .navicon
+          &:before, &:after
+            top: 0
+
+
+
+
+/*@media screen and (max-width: 600px)
    .clearfix:after
      content: ''
      clear: both
@@ -21,7 +71,7 @@
 
    /* Hamburger CSS and active animation */
 
-   #hamburger
+   /*#hamburger
      display: block
      float: left
      margin-top: 18px

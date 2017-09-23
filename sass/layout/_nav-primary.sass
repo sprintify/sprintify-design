@@ -1,60 +1,59 @@
-/* This class is added on scroll
 
-.fixed
-   position: fixed
-   top: 0
-   height: 54px
-   z-index: 3
+/*       Navigation mobile        */
+/*====================================== */
 
-.wrapper-nav
+section
+  height: 100vh
+
+.wrapper
    width: 100%
    max-width: 960px
    margin: 0 auto
 
+/*Navigation links */
 nav
-   position: absolute
-   bottom: 0
-   z-index: 3
+   background-color: $dark
+   position: relative
+   z-index: 2
    width: 100%
-   background: $dark
+   height: 54px
    opacity: .9
-   padding: 0 10px 0 10px
+   .menu
+      margin: 0
+      padding: 0
+      list-style: none
+      overflow: hidden
+      li
+         padding: 0
+         border-bottom: 1px solid $white
+      li a
+         display: block
+         padding: 24px 15px
+         line-height: 0;
+         text-decoration: none
+         text-align: center
+         text-transform: uppercase
+         background-color: $dark
+         color: $white
+         font-weight: 300
+         &:hover
+            color: $white
 
-.wrapper-nav
-   display: flex
-   flex-direction: row
-   justify-content: space-between
+   .menu li:first-child
+      border-top: 1px solid $white
 
-ul.nav-ulinks
+   .menu li:last-child
+         border-bottom: none
+
+/*Social links */
+ul.sosial-ulinks
    flex: 1 1 0
    display: flex
    justify-content: flex-start
    flex-direction: row
-   list-style: none
-   li
-      padding: 12px 20px 12px 0
-      a
-         text-transform: uppercase
-         letter-spacing: .5px
-         font-weight: $font-light
-         color: $white
-         font-size: 20px
-         text-decoration: none
-
-
-//Social links
-ul.sosial-ulinks
-   flex: 1 1 0
-   display: flex
-   justify-content: flex-end
-   flex-direction: row
-   //position: absolute
-   //bottom: 8px
+   position: absolute
+   top: 8px
    opacity: .9
-   margin-top: 10px;
-   //padding-right: 40px;
-   line-height: 0;
-   //padding: 0 20px 0 20px
    list-style: none
    li
       flex: 0 0 auto
@@ -75,63 +74,84 @@ ul.sosial-ulinks
          &:hover
             background-color: $secondary
 
-section
-  height: 100vh
+.logo
+    position: absolute
+    font-family: $font2-stack
+    font-weight: $font2-normal
+    font-size: 30px
+    top: 80px
+    left: 30px
+    width: 160px
+    height: 50px
+    border: 2px solid $secondary
+    p
+      margin-top: 0
 
-@media screen and (max-width: 600px)
 
-   .fixed
-      display: none
 
+
+/*       Navigation desktop      */
+/*====================================== */
+
+@media (min-width: 600px)
    nav
-      top: -2px
-      left: 0
-      padding: 0
-      background: none
-      opacity: 1
-
-
-
-
-   .nav-ulinks
       position: absolute
-      top: 66px
-      left: 0
-      flex-flow: column wrap;
+      bottom: 0
+      z-index: 2
       width: 100%
       background: $dark
       opacity: .9
-      li
-         flex: 0 0 100%
-         border-bottom: 1px solid $primary
-         a
-            display: block
-            padding: 0
+      //padding: 0 30px 0 25px
+      ul.menu
+         display: flex
+         justify-content: flex-start
+         //align-items: center
+         //padding: 2px 0 0 0
+      ul.sosial-ulinks
+         position: relative
+         //top: 0
+         //right: 50px
+         margin-top: -55px
+         display: flex
+         justify-content: flex-end
+         align-content: center
+         color: $white
+      .menu
+         //flex: 0 0 auto
+         max-height: none
+         letter-spacing: 1px
+         li a
+            border-bottom: none
+            color: $white
+            background-color: $dark
+            font-size: 18px
+            font-weight: 300
+            height: 54px
+            padding-top: 27px
+            padding-left: 4px
+            &:hover
+               color: $white
+               background-color: $dark
 
-   .sosial-ulinks
-      position: relative
-      top: -9px
-      left: 0px
-      text-align: left
-      //justify-content: flex-start
-      width: 100%
-      background: $dark
-      opacity: 1
-      padding: 13px 10px 6px 0
-      margin-top: 150px
+   .logo
+      position: absolute
+      font-size: 30px
+      top: 40px
+      left: 40px
 
-      li
-         flex: 1 1 auto
-         a
-            display: block
+   .menu li:first-child
+      padding-left: 0
 
-   nav
-      li:last-child
-         border-bottom: none
+   .menu li:first-child
+      border-top: none !important
 
-   .nav-ulinks
-      li:first-child
-         border-top: 1px solid $primary
+   .menu li:last-child
+      border-bottom: none
 
-      li:first-child
-         padding-left: 0
+   .menu-icon
+      display: none
+   .fixed
+      position: fixed
+      top: 0
+      height: 54px
+      z-index: 3

@@ -737,7 +737,7 @@ ul.sosial-ulinks {
   -ms-flex-direction: row;
   flex-direction: row;
   position: absolute;
-  top: 8px;
+  top: 12px;
   opacity: .9;
   list-style: none;
 }
@@ -750,8 +750,8 @@ ul.sosial-ulinks li {
 }
 
 ul.sosial-ulinks li a {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   background-color: white;
   color: #0E111B;
   border-radius: 50%;
@@ -923,7 +923,7 @@ ul.sosial-ulinks li a:hover {
 
 .shake {
   -webkit-animation-name: watch;
-  -webkit-animation-duration: 80s;
+  -webkit-animation-duration: 45s;
   -webkit-transform-origin: 50% 50%;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;

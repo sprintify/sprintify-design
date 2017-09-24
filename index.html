@@ -11,7 +11,11 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
-
+   <!-- load and instantiate ScrollReveal first -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/3.3.1/scrollreveal.min.js"></script>
+   <script>
+      window.sr = ScrollReveal();
+   </script>
 </head>
 
 <body>
@@ -30,15 +34,6 @@
             <p class="sprintify">Sprintify</p>
         </div>
 
-
-        <!-- <div id="burger-container"
-           <div id="burger">
-             <span>&nbsp;</span>
-             <span>&nbsp;</span>
-             <span>&nbsp;</span>
-           </div>
-        </div>
-   -->
     		<nav class="header">
                <div class="wrapper">
                   <input class="menu-btn" type="checkbox" id="menu-btn" />
@@ -50,10 +45,6 @@
                       	<li><a href="#">Photoshoot</a></li>
                       	<li><a href="#">Contact</a></li>
                      </ul>
-                     <!-- <ul class="logo">
-                        <li><a href="#!">Sprintify</a></li>
-                     </ul> -->
-
 
                   <ul class="sosial-ulinks">
                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -140,7 +131,7 @@
             <div class="video-container">
                 <div class="wrapper">
                       <video width="100%" controls loop="loop">
-                          <source src="https://res.cloudinary.com/dybgkt9iw/video/upload/v1505409046/sprintify_theme_fashion/mikah_sound_compressed.mp4" type="video/mp4">
+                          <source src="https://res.cloudinary.com/dybgkt9iw/video/upload/v1506282554/mikah_sound_2_medium_800_u65iqa.mp4" type="video/mp4">
                           <source src="mikah_sound_compressed.ogg" type="video/ogg">
                            Your browser does not support HTML5 video.-->
                       </video>
@@ -177,6 +168,10 @@
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
 	<script src="js/script.js"></script>
 
+   <!-- make reveal calls last -->
+    <script>
+      sr.reveal('.fooReveal', { container: '.fooContainer' });
+    </script>
 
 
 	</body>

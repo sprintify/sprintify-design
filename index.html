@@ -15,7 +15,21 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/3.3.1/scrollreveal.min.js"></script>
    <script>
       window.sr = ScrollReveal();
-   </script>
+
+      // Add class to <html> if ScrollReveal is supported
+      // Note: this method is deprecated, and only works in version 3
+      if (sr.isSupported()) {
+        document.documentElement.classList.add('sr');
+      }
+
+    </script>
+
+    <style>
+
+      /* Ensure elements load hidden before ScrollReveal runs */
+      .sr .fooReveal { visibility: hidden; }
+
+    </style>
 </head>
 
 <body>

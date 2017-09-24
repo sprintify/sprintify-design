@@ -41,11 +41,11 @@ $().ready (function () {
 	window.sr = ScrollReveal();
 
 	sr.reveal('.title-large', {
-		duration: 1500,
-    	distance: '50px',
+		duration: 2000,
+    	distance: '100px',
 		origin: 'bottom',
-		scale: 1.5,
-    	easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
+		scale: 1,
+    	easing: 'cubic-bezier(.38,1.67,.56,1.06)',
 		delay: 0,
     	reset: true
 	});
@@ -54,7 +54,7 @@ $().ready (function () {
 		duration: 2000,
 		distance: '100px',
 		scale: 1,
-		easing: 'cubic-bezier(0.77, 0, 0.175, 1)',
+		easing: 'cubic-bezier(0.16, 0.84, 0.44, 1)',
 		delay: 1,
 		viewFactor: 0.25,
 		reset: true
@@ -66,7 +66,7 @@ $().ready (function () {
 		scale: 1,
     	rotate: { x: 0, y: 0, z: 0 },
 		delay: 200,
-    	easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
+    	easing: 'cubic-bezier(0.77, 0, 0.175, 1)',
     	viewFactor: 0.2,
     	reset: true
 	});

@@ -1282,7 +1282,7 @@ body.lb-disable-scrolling {
   padding-top: 20px;
   margin: 0;
   padding-left: 0;
-  padding-bottom: 0;
+  padding-bottom: 15px;
 }
 
 .header-gallery header ul {
@@ -1319,6 +1319,7 @@ body.lb-disable-scrolling {
   background-color: white;
   color: red;
   border-bottom: red 1px solid;
+  cursor: pointer;
 }
 
 /*

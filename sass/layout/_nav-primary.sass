@@ -178,3 +178,94 @@ ul.sosial-ulinks
       top: 0
       height: 54px
       z-index: 3
+
+
+/*       Navigation Ipad 1 and 2     */
+/*====================================== */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+     nav
+        position: absolute
+        bottom: 0
+        z-index: 4
+        width: 100%
+        background: $dark
+        opacity: .9
+        padding: 0 30px 0 25px
+        ul.menu
+           display: flex
+           justify-content: flex-start
+           //align-items: center
+           //padding: 2px 0 0 0
+        ul.sosial-ulinks
+           //position: absolute
+           //z-index: 4
+           //top: 12px
+           //left: 900px
+           display: flex
+           justify-content: flex-end
+           align-content: center
+           color: $white
+        .sosial-ulinks
+           position: relative
+           z-index: 4
+           max-height: none
+           letter-spacing: 1px
+           li a
+              position: relative
+              z-index: 4
+              top: -55px
+              border-bottom: none
+              //height: 30px
+              //padding-top: 27px
+              //padding-left: 4px
+
+
+        .menu
+           //flex: 0 0 auto
+           position: relative
+           z-index: 4
+           max-height: none
+           letter-spacing: 1px
+           li a
+              position: relative
+              z-index: 4
+              border-bottom: none
+              color: $white
+              background-color: $dark
+              font-size: 18px
+              font-weight: 300
+              height: 54px
+              padding-top: 27px
+              padding-left: 4px
+              &:hover
+                 color: $secondary
+                 background-color: $dark
+
+     .logo
+        position: absolute
+        font-size: 30px
+        top: 40px
+        left: 40px
+
+     .menu li:first-child
+        padding-left: 0
+
+     .menu li:nth-child(1)
+        border-top: none !important
+
+     .menu li
+        border-bottom: none !important
+
+     .menu-icon
+        display: none
+     .fixed
+        position: fixed
+        top: 0
+        height: 54px
+        z-index: 3
+
+
+}

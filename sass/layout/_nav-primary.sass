@@ -25,7 +25,7 @@ nav
       overflow: hidden
       li
          padding: 0
-         border-bottom: 1px solid $primary
+         border-bottom: 1px solid $secondary
       li a
          display: block
          padding: 24px 15px
@@ -39,12 +39,12 @@ nav
          font-weight: 300
          transition: all 2.5ms ease-in-out
          &:hover
-            color: $primary
+            color: $secondary
             background-color: $dark
 
 
    .menu li:first-child
-      border-top: 1px solid $primary
+      border-top: 1px solid $secondary
 
    .menu li:last-child
          border-bottom: none
@@ -105,26 +105,45 @@ ul.sosial-ulinks
       width: 100%
       background: $dark
       opacity: .9
-      //padding: 0 30px 0 25px
+      padding: 0 30px 0 25px
       ul.menu
          display: flex
          justify-content: flex-start
          //align-items: center
          //padding: 2px 0 0 0
       ul.sosial-ulinks
-         position: relative
-         //top: 0
-         //right: 50px
-         margin-top: -55px
+         //position: absolute
+         //z-index: 4
+         //top: 12px
+         //left: 900px
          display: flex
          justify-content: flex-end
          align-content: center
          color: $white
-      .menu
-         //flex: 0 0 auto
+      .sosial-ulinks
+         position: relative
+         z-index: 4
          max-height: none
          letter-spacing: 1px
          li a
+            position: relative
+            z-index: 4
+            top: -55px
+            border-bottom: none
+            //height: 30px
+            //padding-top: 27px
+            //padding-left: 4px
+
+
+      .menu
+         //flex: 0 0 auto
+         position: relative
+         z-index: 4
+         max-height: none
+         letter-spacing: 1px
+         li a
+            position: relative
+            z-index: 4
             border-bottom: none
             color: $white
             background-color: $dark
@@ -134,7 +153,7 @@ ul.sosial-ulinks
             padding-top: 27px
             padding-left: 4px
             &:hover
-               color: $white
+               color: $secondary
                background-color: $dark
 
    .logo

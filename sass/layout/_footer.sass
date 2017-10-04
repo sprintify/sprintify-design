@@ -84,14 +84,14 @@ footer .title-large
   margin: 0
   width: 100%
   li
-    flex: 0 0 80px
+    flex: 0 0 100px
     overflow: hidden
     list-style-type: none
     position: relative
   a
     font-family: 'Open Sans', sans-serif
-    font-weight: 400
-    font-size: 12px
+    font-weight: 300
+    font-size: 16px
     background-color: $dark
     color: $text-inverse
     border-radius: 18px
@@ -123,10 +123,11 @@ footer .title-large
     font-size: 50px
     margin-top: 80px
   p
-    font-weight: 400
+    font-weight: 300
     color: $text-inverse
     margin-top: 20px
     text-transform: uppercase
+    letter-spacing: 1px
   &:first-child
     display: block
 
@@ -174,15 +175,17 @@ textarea
   width: 150px
   border-radius: 5px
   margin: 0 auto
-  background-color: $dark
+  background-color: $secondary
   color: $white
   font-size: 16px
   text-transform: uppercase
   font-family: $font2-stack
   font-weight: $font2-light
   transtion: all 250ms ease-in-out
+  cursor: pointer
+
   &:hover
-    background-color: $secondary
+    background-color: $dark
 
 @media all and (max-width: 600px)
   .tabs

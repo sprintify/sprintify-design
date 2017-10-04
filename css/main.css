@@ -399,7 +399,7 @@ img.staffimg {
   color: #0E111B;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .container {
     padding: 50px 20px 0px 20px;
   }
@@ -865,7 +865,7 @@ ul.sosial-ulinks li a:hover {
 
 /*       Navigation desktop      */
 /*====================================== */
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   nav {
     position: absolute;
     bottom: 0;
@@ -1022,7 +1022,7 @@ ul.sosial-ulinks li a:hover {
   text-align: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .shake {
     width: 38%;
   }
@@ -1376,7 +1376,7 @@ body.lb-disable-scrolling {
   max-width: 100%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .portifolio-head {
     float: none;
     width: 100%;
@@ -1651,7 +1651,7 @@ textarea {
   background-color: #0E111B;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 768px) {
   .tabs {
     display: -webkit-flex;
     display: -ms-flexbox;

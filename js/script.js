@@ -70,7 +70,7 @@ $().ready (function () {
     	viewFactor: 0.2,
     	reset: true
 	});
-
+/*
   // setup Images section scrollReveal
 	sr.reveal('.title-medium', {
 		duration: 1200,
@@ -95,7 +95,7 @@ $().ready (function () {
     viewFactor: 0.2,
     reset: true
 	});
-
+*/
 	// setup Responsive section scrollReveal
 	sr.reveal('.showcase-desktop-left, .showcase-iphone-left',{
 		duration:2000,

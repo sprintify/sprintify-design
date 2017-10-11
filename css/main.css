@@ -44,12 +44,13 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
   text-transform: uppercase;
   letter-spacing: -1px;
   margin-bottom: 30px;
-  color: #2b8aba;
+  color: #8aba2b;
 }
 
 .container.accordions {
   position: relative;
   z-index: 2;
+  max-height: 280px;
 }
 
 .accordion {
@@ -362,7 +363,7 @@ nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before, nav .menu-btn:ch
   -ms-flex-direction: row;
   flex-direction: row;
   padding: 0;
-  padding-bottom: 110px;
+  padding-bottom: 100px;
   background-color: white;
 }
 
@@ -461,7 +462,7 @@ img.staffimg {
   line-height: 1.2;
   letter-spacing: -1px;
   margin-bottom: 30px;
-  color: #2b8aba;
+  color: #8aba2b;
   text-align: left;
 }
 
@@ -1101,12 +1102,13 @@ ul.sosial-ulinks li a:hover {
 }
 
 .container-productivity {
-  padding: 10px 20px 90px 20px;
+  padding: 10px 20px 1px 20px;
   position: relative;
   top: 0;
   left: 0;
   z-index: 2;
   background-color: white;
+  margin-bottom: -130px;
 }
 
 .wrapper-productivity {

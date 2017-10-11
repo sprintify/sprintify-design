@@ -439,7 +439,6 @@ img.staffimg {
   left: 0;
   z-index: 2;
   background-color: white;
-  overflow: hidden;
 }
 
 .showcase-desktop-left img {

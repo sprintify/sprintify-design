@@ -340,6 +340,7 @@ nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before, nav .menu-btn:ch
   left: 0;
   z-index: 2;
   background-color: white;
+  overflow: hidden;
 }
 
 .wrapper {
@@ -438,6 +439,7 @@ img.staffimg {
   left: 0;
   z-index: 2;
   background-color: white;
+  overflow: hidden;
 }
 
 .showcase-desktop-left img {
@@ -1109,6 +1111,7 @@ ul.sosial-ulinks li a:hover {
   z-index: 2;
   background-color: white;
   margin-bottom: -130px;
+  overflow: hidden;
 }
 
 .wrapper-productivity {
@@ -1436,6 +1439,7 @@ body.lb-disable-scrolling {
   width: 100%;
   background-color: white;
   padding-bottom: 300px;
+  overflow: hidden;
 }
 
 .container-box {

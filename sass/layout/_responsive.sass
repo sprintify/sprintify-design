@@ -1,0 +1,95 @@
+.container
+   padding-bottom: 150px
+
+.section-responsiv
+   position: relative
+   top: 0
+   left: 0
+   z-index: 2
+   background-color: $white
+
+.showcase-desktop-left img
+   width: 100%
+   height: auto
+
+.showcase-ipad-right img
+   width: 100%
+   height: auto
+
+.showcase-iphone-left img
+   width: 100%
+   height: auto
+
+.title-responsive
+    font-family: $font-stack
+    font-weight: $font-normal
+    font-size: 42px
+    line-height: 1.2
+    letter-spacing: -1px
+    margin-bottom: 30px
+    color: $primary
+    text-align: left
+
+.textresponsive
+    font-family: $font2-stack
+    font-weight: $font2-light
+    font-size: 18px
+    line-height: 1.4
+    text-align: left
+    color: $dark
+
+.button-responsive
+   width: 120px
+   padding: 10px
+   background-color: $secondary
+   color: $text-inverse
+   font-size: 18px
+   font-family: $font2-stack
+   font-weight: $font2-light
+   text-align: center
+   float: right
+   cursor: pointer
+   transition: all 250ms ease-in
+   &:hover
+      background-color: $primary
+
+.button-responsive.left
+   float: left
+
+.responsive
+   display: flex
+   justify-content: space-between
+
+.showcase-desktop-left
+   flex: 0 0 70%
+.showcase-desktop-right
+   flex: 0 0 30%
+   margin-left: 30px
+   margin-left: 20px
+
+.showcase-ipad-left
+   flex: 0 0 70%
+.showcase-ipad-right
+   flex: 0 0 30%
+   margin-left: 30px
+   margin-left: 20px
+
+.showcase-iphone-left
+   flex: 0 0 20%
+.showcase-iphone-right
+   flex: 0 0 80%
+   margin-left: 30px
+   margin-left: 20px
+
+
+
+
+@media screen and (max-width: 768px)
+    .responsive
+      flex-direction: column
+
+    .showcase-left, .showcase-right
+      flex: 0 0 100%
+
+    .title-responsive
+      margin-top: 30px

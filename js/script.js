@@ -96,6 +96,43 @@ $().ready (function () {
     reset: true
 	});
 
+	// setup Responsive section scrollReveal
+	sr.reveal('.showcase-desktop-left, .showcase-iphone-left',{
+		duration:2000,
+		origin:'top',
+		distance:'300px',
+		reset: true
+	});
+
+	sr.reveal('.showcase-desktop-right, .showcase-iphone-right',{
+		duration:2000,
+		origin:'right',
+		distance:'300px',
+		reset: true
+	});
+
+	sr.reveal('.showcase-ipad-left',{
+		duration:2000,
+		origin:'left',
+		distance:'300px',
+		reset: true,
+		ViewFactor:0.2
+	});
+
+	sr.reveal('.showcase-ipad-right',{
+		duration:2000,
+		origin:'right',
+		distance:'300px',
+		reset: true,
+		ViewFactor:0.2
+	});
+
+	sr.reveal('.button-responsive',{
+		duration:2000,
+		delay:2000,
+		origin:'bottom',
+		reset: true
+	});
 	// setup About section scrollReveal
 	sr.reveal('', {
 		duration: 600,

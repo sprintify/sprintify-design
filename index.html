@@ -11,6 +11,12 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
+
+   <!-- Gallery js files -->
+   <!--<script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+   <!--<<script src= "https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/js/lightbox.min.js"></script>-->
+   <!--<script src= "js/script.js"></script> -->
+
    <!-- load and instantiate ScrollReveal first -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/3.3.1/scrollreveal.min.js"></script>
    <script>
@@ -35,7 +41,7 @@
 <body>
 
     <!-- Navigation and slider -->
-	<section id="screen1">
+	<section id="screen1" class="sec-nav">
 		<ul class="cb-slideshow">
 	        <li><span>Image 01</span><div><h3>c·r·e·a·t·i·v·e</h3></div></li>
 	        <li><span>Image 02</span><div><h3>bal·ance</h3></div></li>
@@ -53,11 +59,11 @@
                   <input class="menu-btn" type="checkbox" id="menu-btn" />
                   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
                      <ul class="menu">
-                      	<li><a href="#screen1">Home</a></li>
-                      	<li><a href="#screen2">About</a></li>
-                      	<li><a href="#screen3">Services</a></li>
-                      	<li><a href="#">Photoshoot</a></li>
-                      	<li><a href="#">Contact</a></li>
+                      	<li><a class="scroll" href="#screen1">Home</a></li>
+                      	<li><a class="scroll" href="#screen2">Design</a></li>
+                      	<li><a class="scroll" href="#screen3">Video</a></li>
+                      	<li><a class="scroll" href="#screen4">Gallery</a></li>
+                      	<li><a class="scroll" href="#screen5">Contact</a></li>
                      </ul>
 
                   <ul class="sosial-ulinks">
@@ -69,18 +75,13 @@
                </div>
     		</nav>
 
-
-
-
-
-
 	</section>
 
     <!-- Staff-->
-	<section id="screen2">
-        <div class="container">
+	<section class="section-staff" id="screen2">
+        <div class="container-staff">
 			<div class="wrapper">
-				<div class="title-large">Staff members</div>
+				<div class="title-large">Design</div>
 				<div class="container-staff">
 
 	                <div class="box one">
@@ -107,42 +108,99 @@
 				</div>
             </div>
         </div>
+   </section>
 
-        <!--Productivity-->
-        <div class="container">
-            <div class="wrapper">
-                <img src="img/watch/swatch.png" class="shake">
-                <div class="watchtext">
-                    <h2 class="title-medium">Productivity matters</h2>
+
+
+
+      <!--Responsiv web-->
+      <section class="section-responsiv">
+           <div class="container">
+               <div class="wrapper responsive">
+                   <div class="showcase-desktop-left">
+                      <img src="img/responsive/macbook.png">
+                   </div>
+                   <div class="showcase-desktop-right">
+                      <h2 class="title-responsive">Desktop below 45% of market</h2>
+                      <p class="textresponsive">There have been an increasing amount of people moving from desktop over to other platforms such as mobile and tablets to browse internet. As today mobile and tablets have taken over 50% of market share and the trend seems to continue.</p>
+                     <div class="button-responsive right">Read More</div>
+                   </div>
                 </div>
-             </div>
-        </div>
+           </div>
+
+           <div class="container">
+               <div class="wrapper responsive">
+                  <div class="showcase-ipad-left">
+                     <h2 class="title-responsive">Tablets market share less than 5% of market</h2>
+                     <p class="textresponsive">There have been an increasing amount of people moving from desktop over to other platforms such as mobile and tablets to browse internet. As today mobile and tablets have taken over 50% of market share and the trend seems to continue.</p>
+                    <div class="button-responsive left">Read More</div>
+                  </div>
+                   <div class="showcase-ipad-right">
+                      <img src="img/responsive/ipad.png">
+                   </div>
+                </div>
+           </div>
+
+           <div class="container">
+               <div class="wrapper responsive">
+                   <div class="showcase-iphone-left">
+                      <img src="img/responsive/iphone.png">
+                   </div>
+                   <div class="showcase-iphone-right">
+                      <h2 class="title-responsive">Mobile increase market share and rise over 52%</h2>
+                      <p class="textresponsive">Mobile is still peaking upwards and this trend is still continuing. Today web developers should make atleast two or in many cases three versions of a website to satisfy peoples different screen sizes. Responsive web design is important and in many cases making a business app will make the user experience good.</p>
+                     <div class="button-responsive right">Read More</div>
+                   </div>
+                </div>
+           </div>
+
+      </section>
 
 
-        <!--Accordion-->
-        <div class="container">
-            <div class="wrapper">
-                <ul class="accordion">
-                	<li>
-                		<a>What is productivity?</a>
-                		<p>A measure of the efficiency of a person, machine, factory, system, etc., in converting inputs into useful outputs. Productivity is computed by dividing average output per period by the total costs incurred or resources (capital, energy, material, personnel) consumed in that period. Productivity is a critical determinant of cost efficiency.</p>
-                	</li>
-                	<li>
-                		<a>Why does productivity matter?</a>
-                		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ipsum, fuga, in, obcaecati magni ullam nobis voluptas fugiat tenetur voluptatum quas tempora maxime rerum neque deserunt suscipit provident cumque et mollitia ex aspernatur porro minus sapiente voluptatibus eos at perferendis repellat odit aliquid harum molestias ratione pariatur adipisci. Aliquid, iure.</p>
-                	</li>
-                	<li>
-                		<a>Why increase productivity?</a>
-                		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ipsum, fuga, in, obcaecati magni ullam nobis voluptas fugiat tenetur voluptatum quas tempora maxime rerum neque deserunt suscipit provident cumque et mollitia ex aspernatur porro minus sapiente voluptatibus eos at perferendis repellat odit aliquid harum molestias ratione pariatur adipisci. Aliquid, iure.</p>
-                	</li>
-                </ul>
+
+   <!--Productivity-->
+   <section>
+      <div class="container-productivity">
+         <div class="wrapper-productivity">
+
+            <div class="container watch">
+               <div class="wrapper productivity">
+                  <img src="img/watch/swatch.png" class="shake">
+               </div>
             </div>
-        </div>
+
+           <!--Accordion-->
+           <div class="container accordions">
+               <div class="watchtext">
+                   <h2 class="title-medium">Productivity matters</h2>
+               </div>
+                   <ul class="accordion">
+                   	<li>
+                   		<a>What is productivity?</a>
+                   		<p>"A measure of the efficiency of a person, machine, factory, system, etc., in converting inputs into useful outputs. Productivity is computed by dividing average output per period by the total costs incurred or resources (capital, energy, material, personnel) consumed in that period. Productivity is a critical determinant of cost efficiency."</p>
+                   	</li>
+                   	<li>
+                   		<a>Why does productivity matter?</a>
+                   		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ipsum, fuga, in, obcaecati magni ullam nobis voluptas fugiat tenetur voluptatum quas tempora maxime rerum neque deserunt suscipit provident cumque et mollitia ex aspernatur porro minus sapiente voluptatibus eos at perferendis repellat odit aliquid harum molestias ratione pariatur adipisci. Aliquid, iure.</p>
+                   	</li>
+                   	<li>
+                   		<a>Why increase productivity?</a>
+                   		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ipsum, fuga, in, obcaecati magni ullam nobis voluptas fugiat tenetur voluptatum quas tempora maxime rerum neque deserunt suscipit provident cumque et mollitia ex aspernatur porro minus sapiente voluptatibus eos at perferendis repellat odit aliquid harum molestias ratione pariatur adipisci. Aliquid, iure.</p>
+                   	</li>
+                   </ul>
+            </div>
+
+         </div>
+      </div>
+
+   </section>
 
         <!--Video presentation-->
-    <div class="container-box">
-       <div class="title-large video">NEW MEDIA</div>
+   <section id="screen3" class="section-video">
+      <div class="container-box-video">
+         <div class="title-large video">NEW MEDIA</div>
             <div class="video-container">
+<<<<<<< HEAD
                 <div class="wrapper">
                      <!-- <video width="100%" controls loop="loop">
                           <source src="http://res.cloudinary.com/dybgkt9iw/video/upload/v1506282554/sprintify_theme_fashion/mikah_sound_2_medium_800_u65iqa.mp4" type="video/mp4">
@@ -152,6 +210,20 @@
                    </div>
                 </div>
 
+=======
+               <div class="wrapper">
+                  <video width="100%" controls loop="loop">
+                     <source src="http://res.cloudinary.com/dybgkt9iw/video/upload/v1506282554/sprintify_theme_fashion/mikah_sound_2_medium_800_u65iqa.mp4" type="video/mp4">
+                     <source src="mikah_sound_compressed.ogg" type="video/ogg">
+                     Your browser does not support HTML5 video.-->
+                  </video>
+               </div> <!--wrapper-->
+            </div> <!--video-container-->
+         </div> <!--title-large video-->
+      </div> <!--container-box-->
+   </section>
+               <!--
+>>>>>>> 1fcf45f7fd1b84a175f283f33c6788c25d798fc8
                 <form action="https://formspree.io/skigar@yahoo.com" method="POST">
 
                    <div class="contact-info-group">
@@ -169,26 +241,57 @@
                       <input type="submit" value="Send">
                    </div>
 
-               </form>
+               </form> -->
 
-            </div>
-    </div>
+
          <!--<video width="100%" controls autoplay="autoplay" loop="loop">
          <source src="https://res.cloudinary.com/dybgkt9iw/video/upload/v1505409046/sprintify_theme_fashion/mikah_sound_compressed.mp4" type="video/mp4">
          <source src="mikah_sound_compressed.ogg" type="video/ogg">
          Your browser does not support HTML5 video.-->
 
 
-
-        <div class="container">
-            <div class="wrapper">
-                <div class="boxproductivity"></div>
-
-             </div>
-
-
+   <!--Gallery presentation-->
+   <section id="screen4" class="section-gallery-container">
+       <div class="container-box header-gallery">
+           <div class="gallery-wrapper">
+               <h1 class="title-large gallery">Portifolio</h1>
+               <header>
+                   <ul>
+                       <li><a href="#">All projects</a></li>
+                       <li><a href="#">Design</a></li>
+                       <li><a href="#">Fashion</a></li>
+                       <li><a href="#">Architecture</a></li>
+                   </ul>
+               </header>
+           </div>
+       </div>
+      <div class="container-box">
+          <ul id="gallery">
+              <li class="design"><a href="img/01_design.jpg" data-lightbox="projects" data-title="Project 1" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Momos, eaque!"><img src="img/01_design.jpg"></a></li>
+              <li class="design"><a href="img/02_design.jpg" data-lightbox="projects" data-title="Project 2" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Momos, eaque!"><img src="img/02_design.jpg"></a></li>
+              <li class="design"><a href="img/03_design.jpg" data-lightbox="projects" data-title="Project 3" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Momos, eaque!"><img src="img/03_design.jpg"></a></li>
+              <li class="design"><a href="img/04_design.jpg" data-lightbox="projects" data-title="Project 4" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Momos, eaque!"><img src="img/04_design.jpg"></a></li>
+              <li class="design architecture"><a href="img/05_design.jpg" data-lightbox="projects" data-title="Project 5" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Momos, eaque!"><img src="img/05_design.jpg"></a></li>
+              <li class="design architecture"><a href="img/06_design.jpg" data-lightbox="projects" data-title="Project 6" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Momos, eaque!"><img src="img/06_design.jpg"></a></li>
+              <li class="design"><a href="img/07_design.jpg" data-lightbox="projects" data-title="Project 7" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Momos, eaque!"><img src="img/07_design.jpg"></a></li>
+              <li class="fashion"><a href="img/08_fashion.jpg" data-lightbox="projects" data-title="Project 8" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Momos, eaque!"><img src="img/08_fashion.jpg"></a></li>
+              <li class="fashion"><a href="img/09_fashion.jpg" data-lightbox="projects" data-title="Project 9" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Momos, eaque!"><img src="img/09_fashion.jpg"></a></li>
+              <li class="fashion"><a href="img/10_fashion.jpg" data-lightbox="projects" data-title="Project 10" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Momos, eaque!"><img src="img/10_fashion.jpg"></a></li>
+              <li class="fashion"><a href="img/11_fashion.jpg" data-lightbox="projects" data-title="Project 11" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Momos, eaque!"><img src="img/11_fashion.jpg"></a></li>
+              <li class="fashion"><a href="img/12_fashion.jpg" data-lightbox="projects" data-title="Project 12" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Momos, eaque!"><img src="img/12_fashion.jpg"></a></li>
+              <li class="fashion"><a href="img/13_fashion.jpg" data-lightbox="projects" data-title="Project 13" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Momos, eaque!"><img src="img/13_fashion.jpg"></a></li>
+              <li class="fashion"><a href="img/14_fashion.jpg" data-lightbox="projects" data-title="Project 14" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Momos, eaque!"><img src="img/14_fashion.jpg"></a></li>
+              <li class="fashion"><a href="img/15_fashion.jpg" data-lightbox="projects" data-title="Project 15" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Momos, eaque!"><img src="img/15_fashion.jpg"></a></li>
+              <li class="architecture"><a href="img/16_architecture.jpg" data-lightbox="projects" data-title="Project 16" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Momos, eaque!"><img src="img/16_architecture.jpg"></a></li>
+              <li class="architecture"><a href="img/17_architecture.jpg" data-lightbox="projects" data-title="Project 17" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Momos, eaque!"><img src="img/17_architecture.jpg"></a></li>
+              <li class="architecture"><a href="img/18_architecture.jpg" data-lightbox="projects" data-title="Project 18" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Momos, eaque!"><img src="img/18_architecture.jpg"></a></li>
+              <li class="architecture"><a href="img/19_architecture.jpg" data-lightbox="projects" data-title="Project 19" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Momos, eaque!"><img src="img/19_architecture.jpg"></a></li>
+              <li class="architecture"><a href="img/20_architecture.jpg" data-lightbox="projects" data-title="Project 20" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Momos, eaque!"><img src="img/20_architecture.jpg"></a></li>
+          </ul>
+      </div>
    </section>
 
+<<<<<<< HEAD
 	<section id="screen3">
 		<div id="boxthree">
 			<a href="#boxone"><h2>ScrollTRICK</h2></a>
@@ -210,15 +313,84 @@
 
    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaVLKjDBHr93VVgfA0DLSHEjpJP_yWOgE&callback=initMap"
  type="text/javascript"></script>
+=======
+   <footer id="screen5">
+        <div class="background-footer">
+            <div class="wrapper">
+            <div class="background-image"></div>
+                <div class="tab container">
+                    <h1 class="title-large">Contact us</h1>
+
+                    <ul class="tabs">
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Map</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul> <!-- / tabs -->
+
+                    <div class="tab_content">
+
+                            <div class="tabs_item">
+                                <span class="line"></span>
+                                <h4>sprintify@sprintify.no</h4>
+                                <p>Cutting edge web solutions - creative design <br>
+                                Call us today: +0047 00 00 00 00
+
+                                <span class="line bottom"></span>
+                            </div> <!-- / tabs_item -->
+
+                        <div class="tabs_item">
+                                <span class="line"></span>
+                            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999051.649239271369!2d10.409739351221935!3d59.05458563997297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4646bd8806a99dcf%3A0xef044d1ec68d01aa!2sVerdens+Ende!5e0!3m2!1sno!2sno!4v1506671564758" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                            </div> <!-- / tabs_item -->
+
+                            <div class="tabs_item">
+                                <span class="line"></span>
+                                <form action="https://formspree.io/skigar@yahoo.com" method="POST">
+                                    <input type="text" name="name" placeholder="Name">
+                                    <input type="text" name="email" placeholder="E-mail">
+                                    <input type="text" name="subject" placeholder="Subject">
+                                    <textarea name="message" placeholder="Message"></textarea>
+                                    <input class="button" type="submit" value="Send Message">
+                                </form>
+                                <br>
+                                <span class="line"></span>
+
+                            </div> <!-- / tabs_item -->
+
+
+                    </div> <!-- / tab_content -->
+                </div> <!-- / tab -->
+            </div> <!-- / wrapper -->
+        </div>  <!-- / background-footer -->
+    </footer>
+
+>>>>>>> 1fcf45f7fd1b84a175f283f33c6788c25d798fc8
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>-->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
-	<script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script>
+    $('a[href^="#"]').smoothPageScroll({
+      easing: 'easeOutQuart',
+      speed: 1000,
+      delay: 0,
+      target: undefined,
+      complate: '',
+      isAddHash: true,
+      isTopScroll: true,
+      isLeftScroll: true
+      });
+    </script>
+	 <script src="js/script.js"></script>
 
-   <!-- make reveal calls last -->
+    <!-- make reveal calls last -->
     <script>
       sr.reveal('.fooReveal', { container: '.fooContainer' });
     </script>
+
 
 
 	</body>

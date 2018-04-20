@@ -1,25 +1,217 @@
-/* Image-bottom fixed
+footer
+   position: relative
+   top: 0
+   left: 0
+   z-index: 2
+   overflow: hidden
 
-.cb-imagebottom li
+.wrapper
   width: 100%
-  height: 100vh
+  max-width: 960px
+  margin: 0 auto
+
+.background-footer
   position: relative
   bottom: 0
   left: 0
-  color: transparent
-  background-image: url(../img/slider/girl-loooking.jpg)
+  z-index: 2
+  width: 100%
+  background-image: url(../img/footer/office.jpg)
+  background-repeat: no-repeat
   background-size: cover
-  background-position: 50% 50%
-  background-repeat: none
-  opacity: 1
-  z-index: 1
+  min-height: 850px
   &:after
     position: absolute
-    width: 100%
-    height: 100vh
-    position: absolute
-    bottom: 0
+    top: 0
     left: 0
-    z-index: 0
+    z-index: -1
+    width: 100%
     content: ''
-    background: transparent url(../img/slider/pattern.png) repeat top left
+    background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAECAYAAABcDxXOAAAAGUlEQVQYV2NkYGD4zwABjLjYOCWQNVBPEQCX0wwFNOiUWgAAAABJRU5ErkJggg==) repeat top left
+    min-height: 850px
+    opacity: .2
+
+.background-image
+  position: relative
+  top: 100px
+  left: 0
+  content: ''
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAECAYAAABcDxXOAAAAGUlEQVQYV2NkYGD4zwABjLjYOCWQNVBPEQCX0wwFNOiUWgAAAABJRU5ErkJggg==) repeat
+  background-color: #444
+  min-height: 650px
+  width: 93%
+  margin: 0 auto
+  height: 100%
+  opacity: .3
+
+/*
+ *Contact us section
+
+.tab.container
+  position: absolute
+  top: 100px
+  left: 12.5%
+  width: 75%
+  background-color: transparent
+  padding: 0
+  margin: 0 auto
+
+footer .title-large
+  text-align: center
+  text-transform: uppercase
+  color: $text-inverse
+  font-weight: 500
+  letter-spacing: -2px
+  padding-top: 40px
+  margin-top: -20px
+  margin-bottom: 10px
+
+.tab
+  padding-top: 0px
+  margin-bottom: 20px
+  position: relative
+  overflow: hidden
+  background: $white
+  margin: 0 auto
+  line-height: 1.5
+  font-weight: 300
+  color: $dark
+
+.tabs
+  display: flex
+  justify-content: space-around
+  position: relative
+  overflow: hidden
+  padding: 0 28%
+  margin: 0
+  width: 100%
+  li
+    flex: 0 0 110px
+    overflow: hidden
+    list-style-type: none
+    position: relative
+  a
+    font-family: 'Open Sans', sans-serif
+    font-weight: 300
+    font-size: 15px
+    background-color: $dark
+    color: $text-inverse
+    border-radius: 18px
+    display: block
+    letter-spacing: 1px
+    outline: none
+    text-transform: uppercase
+    padding: 5px 10px 5px 10px
+    text-decoration: none
+    transition: all 0.2s ease-in-ou
+
+.line
+  display: block
+  border-top: 1px solid $white
+  max-widt: 960px
+  &.bottom
+    margin-top: 30px
+
+.tabs_item
+  display: none
+  padding: 30px 0
+  width: 75%
+  margin: 0 auto
+  h4
+    font-family: 'Oswald', sans-serif
+    font-weight: 400
+    line-height: 0
+    text-transform: uppercase
+    color: $secondary
+    font-size: 50px
+    margin-top: 80px
+  p
+    font-weight: 300
+    color: $text-inverse
+    margin-top: 20px
+    text-transform: uppercase
+    letter-spacing: 1px
+  &:first-child
+    display: block
+
+.current a
+  color: $text-inverse
+  background: $secondary
+
+.map
+  filter: opacity(10%)
+  filter: brightness(50%)
+  filter: grayscale(95%)
+
+/*forms
+
+form
+  font-family: 'Open Sans', sans-serif
+  font-size: 10px
+  padding-top: 44px
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+
+input, textarea, .button
+  box-sizing: border-box
+  width: 80%
+  flex: 0 0 100%
+  padding: 10px
+  border-radius: 5px
+  margin: 0 auto
+  margin-bottom: 10px
+  border: none
+  font-family: $font2-stack
+  font-weight: $font2-light
+  font-size: 12px
+
+input, textarea, .button a:focus
+  outline: none
+  border: none
+
+textarea
+  height: 10em
+  resize: vertical
+
+.button
+  width: 150px
+  border-radius: 5px
+  margin: 0 auto
+  background-color: $secondary
+  color: $white
+  font-size: 16px
+  text-transform: uppercase
+  font-family: $font2-stack
+  font-weight: $font2-light
+  transtion: all 250ms ease-in-out
+  cursor: pointer
+
+  &:hover
+    background-color: $dark
+
+@media all and (max-width: 768px)
+  .tabs
+    display: flex
+    justify-content: flex-start
+    flex-direction: column
+    position: relative
+    overflow: hidden
+    padding: 0 28%
+    margin: 0
+    width: 100%
+    li
+      flex: 0 0 40px
+      overflow: hidden
+      list-style-type: none
+      position: relative
+
+  footer .title-large
+   text-align: center
+   text-transform: uppercase
+   color: $text-inverse
+   font-weight: 500
+   font-size: 48px
+   letter-spacing: 1px
+   padding-top: 40px
+   margin-bottom: 20px

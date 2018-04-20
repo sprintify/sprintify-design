@@ -1,12 +1,12 @@
-
-
-.container
- padding: 190px 20px 90px 20px
+.section-staff
+ padding: 100px 20px 1px 20px
+ margin-top: 0
  position: relative
  top: 0
  left: 0
  z-index: 2
  background-color: $white
+ overflow: hidden
 
 .wrapper
   width: 100%
@@ -14,14 +14,16 @@
   margin: 0 auto
 
 .title-large
-    padding-top: 60px
+    //padding-top: 160px
 
 .container-staff
   display: flex
   justify-content: space-between
   flex-direction: row
   padding: 0
-  padding-bottom: 110px
+  padding-bottom: 1px
+  background-color: $white
+
 
 img.staffimg
   width: 100%
@@ -62,9 +64,10 @@ img.staffimg
   color: $dark
 
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 768px)
     .container
         padding: 50px 20px 0px 20px
+        overflow: hidden
 
     .title-large
             font-size: 50px
